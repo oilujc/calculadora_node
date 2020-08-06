@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Calculadora</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1>El resultado es: <%= numero %></h1>
-    <form>
-      <input type="number" name="numero1" placeholder="Numero 1">
-      <input type="number" name="numero2" placeholder="Numero 2">
-      <button type="submit">Calcular</button>
-    </form>
-  </body>
+
+<head>
+  <title>Calculadora</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>El resultado es: <%= resultado %></h1>
+  <form class="calculadora">
+    <input type="number" name="numero1" placeholder="Numero 1">
+    <input type="number" name="numero2" placeholder="Numero 2">
+
+    <div class="radioBtn">
+      <p>
+        <input type="radio" name="tipo" value="suma"> Suma
+      </p>
+      <p><input type="radio" name="tipo" value="resta"> Resta</p>
+      <p><input type="radio" name="tipo" value="multi"> Multiplicación</p>
+      <p><input type="radio" name="tipo" value="divi"> División</p>
+      
+      
+      
+    </div>
+
+    <button type="submit" class="btn">Calcular</button>
+  </form>
+  <%= error %>
+
+</body>
+
 </html>

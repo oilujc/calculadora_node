@@ -1,8 +1,36 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 90%;
+  margin: auto;
 }
 
-a {
-  color: #00B7FF;
+.calculadora {
+  width: 400px;
+  padding: 12px;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+input {
+  width: 90%;
+  margin-bottom: 5px;
+}
+
+.radioBtn {
+  display: flex;
+}
+
+.btn {
+  margin-top: 12px;
+  padding: 12px;
+  border: transparent;
+  border-radius: 5px;
+  background-color: #db413b;
+}
+
+.btn:hover {
+  background-color: #ad322d;
+}
+
+p {
+  margin: 0px 13px;
 }
